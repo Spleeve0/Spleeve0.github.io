@@ -1,4 +1,4 @@
-<canvas id="canvas" width="256" height="256" style="background: black;">
+<canvas id="canvas" width="256" height="256" style="background: blue;">
 <script>
   let ctx   = canvas.getContext("2d");
   let snake = [[8,8]], apple = [4,4], [dx,dy] = [0,0];
@@ -18,5 +18,5 @@
     ctx.fillRect(apple[0]*16, apple[1]*16, 16, 16);
     ctx.fillStyle = "lime";
     snake.forEach(([x,y]) => ctx.fillRect(x*16, y*16, 16, 16));
-  }, 125);
+  }, 200);
 </script>
