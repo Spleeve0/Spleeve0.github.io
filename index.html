@@ -4,7 +4,7 @@
     <title>snake</title>
     <script type="module">
       document.body.innerHTML = `<canvas id="canvas"
-        width="256" height="256" style="background: black;">`;
+        width="256" height="256" style="background: blue;">`;
       let ctx   = canvas.getContext("2d");
       let snake = [[8,8]], apple = [4,4], [dx,dy] = [0,0];
       onkeydown = ({key}) => [dx,dy] =
